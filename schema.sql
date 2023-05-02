@@ -23,3 +23,7 @@ create table species (
 	id SERIAL PRIMARY KEY,
 	name varchar(15)
 )
+
+/* Modifying animals table id to generated always as identity*/
+alter table animals
+	alter id add generated always as identity;
