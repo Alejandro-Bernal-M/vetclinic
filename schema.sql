@@ -17,3 +17,9 @@ create table owners (
 	full_name varchar(30),
 	age int
 )
+
+/* Creating species table*/
+create table species (
+	id SERIAL PRIMARY KEY,
+	name varchar(15)
+)
