@@ -28,3 +28,44 @@ where name like '%mon';
 update animals
 set species_id = 2
 where species_id is null;
+
+/*Modifying owner_id information */
+update animals
+set owner_id = 1
+where name like 'Agumon';
+
+update animals
+set owner_id = 2
+where name like 'Gabumon';
+
+update animals
+set owner_id = 2
+where name like 'Pikachu';
+
+update animals
+set owner_id = 3
+where name like 'Devimon';
+
+update animals
+set owner_id = 3
+where name like 'Plantmon';
+
+update animals
+set owner_id = 4
+where name like 'Charmander';
+
+update animals
+set owner_id = 4
+where name like 'Squirtle';
+
+update animals
+set owner_id = 4
+where name like 'Blossom';
+
+update animals
+set owner_id = 5
+where name like 'Angemon';
+
+update animals
+set owner_id = 5
+where name like 'Boarmon';
