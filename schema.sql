@@ -27,3 +27,7 @@ create table species (
 /* Modifying animals table id to generated always as identity*/
 alter table animals
 	alter id add generated always as identity;
+
+/* Deleting species column*/
+alter table animals
+	drop column species;
