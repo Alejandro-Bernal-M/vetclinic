@@ -22,11 +22,11 @@ values('pokemon'),('Digimon');
 
 /* Modifying species_id on animals table */
 update animals
-set species_id = 1
+set species_id = 2
 where name like '%mon';
 
 update animals
-set species_id = 2
+set species_id = 1
 where species_id is null;
 
 /*Modifying owner_id information */
