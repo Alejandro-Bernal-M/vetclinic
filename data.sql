@@ -19,3 +19,12 @@ values('Sam Smith', 34 ),('Jennifer Orwell', 19),('Bob', 45), ('Melody Pond', 77
 /* Inserting data in species table*/
 insert into species (name)
 values('pokemon'),('Digimon');
+
+/* Modifying species_id on animals table */
+update animals
+set species_id = 1
+where name like '%mon';
+
+update animals
+set species_id = 2
+where species_id is null;
