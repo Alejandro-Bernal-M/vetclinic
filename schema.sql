@@ -31,3 +31,25 @@ alter table animals
 /* Deleting species column*/
 alter table animals
 	drop column species;
+
+
+/* Adding species_id column and making it foreign key*/
+alter table animals
+add  species_id int;
+
+alter table animals
+add constraint constraint_fk
+foreign key (species_id)
+references species(id)
+on delete cascade;
+
+/* Adding owner_id column and making it foreign key*/
+
+alter table animals
+add owner_id int;
+
+alter table animals
+add constraint contraint_fk
+foreign key (owner_id)
+references owners(id)
+on delete cascade;
