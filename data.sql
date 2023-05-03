@@ -74,3 +74,6 @@ where name like 'Boarmon';
 insert into vets(name, age, date_of_graduation)
 values('William Tatcher', 45, '2000-04-23'),('Maisy Smith', 26, '2019-01-17'),('Stephanie Mendez', 64, '1981-05-04'),('Jack Harkness', 38, '2008-06-08')
 
+/* Inserting data for specializations table */
+insert into specializations(vet_id, species_id)
+values(1, 1), (3,1), (3,2),(4,2)
