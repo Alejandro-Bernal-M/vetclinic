@@ -61,3 +61,11 @@ create table vets (
 	age int,
 	date_of_graduation date
 )
+
+/* Creating specializaton table for handle many to many relationship*/
+create table specializations (
+	vet_id int, 
+	species_id int,
+	foreign key(vet_id) references vets(id),
+	foreign key(species_id) references species(id)
+)
