@@ -12,3 +12,60 @@ INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg) values( 10, 'Blossom', '1998-10-13', 3, '1', 17);
 INSERT INTO animals (id, name, date_of_birth, escape_attempts, neutered, weight_kg) values( 11, 'Ditto', '2022-05-2', 4, '1', 22);
 
+/* Inserting data in owners table*/
+insert into owners (full_name, age)
+values('Sam Smith', 34 ),('Jennifer Orwell', 19),('Bob', 45), ('Melody Pond', 77),('Dean Winchester', 14),('Jodie Whittaker', 38);
+
+/* Inserting data in species table*/
+insert into species (name)
+values('pokemon'),('Digimon');
+
+/* Modifying species_id on animals table */
+update animals
+set species_id = 2
+where name like '%mon';
+
+update animals
+set species_id = 1
+where species_id is null;
+
+/*Modifying owner_id information */
+update animals
+set owner_id = 1
+where name like 'Agumon';
+
+update animals
+set owner_id = 2
+where name like 'Gabumon';
+
+update animals
+set owner_id = 2
+where name like 'Pikachu';
+
+update animals
+set owner_id = 3
+where name like 'Devimon';
+
+update animals
+set owner_id = 3
+where name like 'Plantmon';
+
+update animals
+set owner_id = 4
+where name like 'Charmander';
+
+update animals
+set owner_id = 4
+where name like 'Squirtle';
+
+update animals
+set owner_id = 4
+where name like 'Blossom';
+
+update animals
+set owner_id = 5
+where name like 'Angemon';
+
+update animals
+set owner_id = 5
+where name like 'Boarmon';
