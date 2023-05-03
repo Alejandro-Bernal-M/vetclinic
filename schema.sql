@@ -53,3 +53,11 @@ add constraint contraint_fk
 foreign key (owner_id)
 references owners(id)
 on delete cascade;
+
+/* Creating veterinarians table*/
+create table vets (
+	id int generated always as identity primary key,
+	name varchar(50),
+	age int,
+	date_of_graduation date
+)
