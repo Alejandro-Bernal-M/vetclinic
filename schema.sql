@@ -69,3 +69,12 @@ create table specializations (
 	foreign key(vet_id) references vets(id),
 	foreign key(species_id) references species(id)
 )
+
+/* Creating visits table*/
+create table visits (
+	animal_id int, 
+	vet_id int,
+	date_of_visit date,
+	foreign key(animal_id) references animals(id),
+	foreign key(vet_id) references vets(id)
+)
